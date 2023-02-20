@@ -1,38 +1,53 @@
+import React from "react";
 
-import React from 'react';
+import { Selected_Site_Context } from "./Context_Hub";
 
-const Layout = () => {
+// Linked Sites
+import Landing_Page_Component from "./linked sites/Landing_Page";
+import About_Me_Page_Component from "./linked sites/About_Me_Page";
+import Contact_Me_Page_Component from "./linked sites/Contact_Me_Page";
+import Portfolio_Page_Component from "./linked sites/Portfolio_Page";
+import Services_Page_Component from "./linked sites/Services_Page";
+
+
+function App() {
+  const [Selected_Site, set_Selected_Site] = React.useState('Landing_Page')
+
+  function Rendering_function(Site_Name){
+    switch (Site_Name) {
+      case 'Landing_Page':
+        console.log('Landing_Page');
+        return Landing_Page_Component
+        break;
+      case 'About_Me_Page':
+        console.log('About_Page');
+        return About_Me_Page_Component
+        break;
+      case 'Contact_Me_Page': 
+        console.log('Methology_Vision_Page'); 
+        return Contact_Me_Page_Component
+        break;
+      case 'Portfolio_Page':
+        console.log('User_Login_Page');
+        return Portfolio_Page_Component
+        break;
+      case 'Services_Page':
+        console.log('Terminal_Demo_Page');
+        return Services_Page_Component
+        break;
+      default:
+        return Landing_Page_Component
+    }
+  }
+  
+  let To_Render = Rendering_function(Selected_Site)
+
   return (
-    <div>
-      <header>
-        <nav>Header Nav</nav>
-        <h1>Header Title</h1>
-      </header>
-      <nav>Main Nav</nav>
-      <main>
-        <section>Section 1</section>
-        <section>Section 2</section>
-        <section>Section 3</section>
-      </main>
-      <aside>Aside</aside>
-      <footer>
-        <nav>Footer Nav</nav>
-        <p>Footer Content</p>
-      </footer>
-    </div>
+    <Selected_Site_Context.Provider value={{Selected_Site, set_Selected_Site}}>
+      <To_Render />
+    </Selected_Site_Context.Provider>
   );
-};
+}
 
-export default Layout;
+export default App;
 
-// Homepage: Your homepage should give a brief introduction about yourself and what you do, your skills and expertise. It can also include a high-level overview of your portfolio.
-
-// About Me: This section should provide a more detailed introduction about yourself, your experience, education, and interests.
-
-// Portfolio: This is the most important section of your website, where you showcase your finished projects. You can organize your portfolio by categories, for example, web development, mobile development, and so on. You can include screenshots, descriptions, and links to live demos of your projects.
-
-// Services: This section can describe the services you offer, such as web development, consulting, and training.
-
-// Blog: This section is optional, but it can be a good place to showcase your thoughts and ideas, write about your projects, and share updates on your work.
-
-// Contact: This section should include your contact information, such as your email address, phone number, and links to your social media profiles.
