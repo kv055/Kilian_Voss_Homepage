@@ -3,10 +3,10 @@ import { Selected_Site_Context } from '../Context_Hub';
 
 const Services_Page_Component = () => {
     return (
-      <div>
+      <div className="bg-no-repeat" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
   
         <header>
-          <h1>Services</h1>
+          <h1 className="text-9xl text-lime-500 Orbitron">Services</h1>
           <h3>Building Frontend Web-Pages/Web-Apps</h3>
           <p>
             My preferred tech stack for most frontend applications is React JS in combination with TailwindCSS.

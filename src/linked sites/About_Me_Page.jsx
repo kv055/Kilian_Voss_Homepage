@@ -1,11 +1,12 @@
 import React from "react";
+import Background from '../assets/giphy_1.gif'
 import { Selected_Site_Context } from '../Context_Hub';
 
 const About_Me_Page_Component = () => {
     return (
-      <div>
+      <div className="bg-no-repeat" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
   
-        <h1>About Me</h1>
+        <h1 className="text-9xl text-lime-500 Orbitron">About Me</h1>
         <div>
           <h3>Introduction</h3>
           <p></p>
