@@ -1,6 +1,6 @@
 import React from 'react';
 import { Selected_Site_Context } from '../Context_Hub';
-import Background from '../assets/space_blue.gif'
+import Background from '../assets/space_purp.gif'
 
 const Landing_Page_Component = () => {
   const {Selected_Site, set_Selected_Site} = React.useContext(Selected_Site_Context)
