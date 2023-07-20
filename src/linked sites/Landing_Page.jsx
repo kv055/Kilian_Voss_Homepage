@@ -6,7 +6,7 @@ const Landing_Page_Component = () => {
   const {Selected_Site, set_Selected_Site} = React.useContext(Selected_Site_Context)
 
   return (
-    <div className="bg-no-repeat" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
+    <div className="bg-no-repeat min-h-screen" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
       <div className='p-36'>
       <h1 className='text-amber-300 text-8xl m-5 Orbitron'>Kilian Voss Development</h1>
  

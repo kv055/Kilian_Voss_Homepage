@@ -6,8 +6,10 @@ import Footer from '../components/footer'
 
 const About_Me_Page_Component = () => {
     return (
-      <div className="bg-no-repeat" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
+      <div className="bg-no-repeat min-h-screen" style={{backgroundImage: `url(${Background})` , backgroundSize: 'cover'}}>
+        
         <Header></Header>
+        
         <div className="flex flex-row">
           <h3 className="flex items-center justify-center Orbitron text-lime-500 m-10"></h3>
 
@@ -43,7 +45,9 @@ const About_Me_Page_Component = () => {
           </div>
         
         </div>
+
         <Footer></Footer>
+
       </div>
     );
   };
