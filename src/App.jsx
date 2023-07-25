@@ -1,53 +1,53 @@
 import React from "react";
+import Background from "./assets/laser_blu.gif";
 
-import { Selected_Site_Context } from "./Context_Hub";
-
-// Linked Sites
-import Landing_Page_Component from "./linked sites/Landing_Page";
-import About_Me_Page_Component from "./linked sites/About_Me_Page";
-import Contact_Me_Page_Component from "./linked sites/Contact_Me_Page";
-import Portfolio_Page_Component from "./linked sites/Portfolio_Page";
-import Services_Page_Component from "./linked sites/Services_Page";
-
-
-function App() {
-  const [Selected_Site, set_Selected_Site] = React.useState('Landing_Page')
-
-  function Rendering_function(Site_Name){
-    switch (Site_Name) {
-      case 'Landing_Page':
-        console.log('Landing_Page');
-        return Landing_Page_Component
-        break;
-      case 'About_Me_Page':
-        console.log('About_Page');
-        return About_Me_Page_Component
-        break;
-      case 'Contact_Me_Page': 
-        console.log('Methology_Vision_Page'); 
-        return Contact_Me_Page_Component
-        break;
-      case 'Portfolio_Page':
-        console.log('User_Login_Page');
-        return Portfolio_Page_Component
-        break;
-      case 'Services_Page':
-        console.log('Terminal_Demo_Page');
-        return Services_Page_Component
-        break;
-      default:
-        return Landing_Page_Component
-    }
-  }
+const Landing_Page_Component = () => {
   
-  let To_Render = Rendering_function(Selected_Site)
-
   return (
-    <Selected_Site_Context.Provider value={{Selected_Site, set_Selected_Site}}>
-      <To_Render />
-    </Selected_Site_Context.Provider>
+    <>
+      {/* Layer 1: background gif */}
+      <div
+        className="bg-no-repeat min-h-screen p-5 sm:p-10 xl:p-28"
+        style={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover",
+        }}
+      >
+        {/* Layer 2: the white transparent board with rounded corners */}
+        <div className="m-5 md:m-10 xl:m-28 bg-slate-300 max-h-screen rounded-xl opacity-60 justify-center">
+          {/* Layer 3: */}
+          <div className="flex p-10 flex-col text-center">
+            <h1 className="m-5 font-bold tracking-widest text-black text-5xl Orbitron">
+              Kilian Voss
+            </h1>
+            <h4 className=" m-5 tracking-widest text-black text-2xl Orbitron">
+              Full stack development
+            </h4>
+            <div className="flex xl:flex-row flex-col mx-auto">
+              <button
+                type="button"
+                className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+              >
+                Profile
+              </button>
+              <button
+                type="button"
+                className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500"
+              >
+                Skills
+              </button>
+              <button
+                type="button"
+                className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500"
+              >
+                Portfolio
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
-export default App;
-
+export default Landing_Page_Component;
