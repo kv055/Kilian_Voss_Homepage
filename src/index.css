@@ -3,11 +3,16 @@
 @import "tailwindcss/utilities";
 @font-face {
   font-family: 'Orbitron-Regular';
-  src: url('./assets/Orbitron/Orbitron-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Orbitron/Orbitron-Regular.ttf') format('truetype');
 }
 .Orbitron {
   font-family: 'Orbitron-Regular', sans-serif;
 }
+.scrollable-content {
+  max-height: calc(100vh - 2rem); /* Adjust this value according to your needs */
+  overflow-y: auto;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
