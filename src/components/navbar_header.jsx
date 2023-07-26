@@ -1,48 +1,21 @@
-import React from 'react'
-import { Selected_Site_Context } from '../Context_Hub';
+import React from "react";
+import "../index.css";
+import { Link } from "react-router-dom";
 
-function navbar() {
-    
-    const {Selected_Site, set_Selected_Site} = React.useContext(Selected_Site_Context)
-    let Display_Selected_Site = <p className='Orbitron text-green-600 text-2xl m-10'>{Selected_Site}</p>
-    return (  
-    <div  className='flex flex-row'>
-        <div className='w-1/2 flex items-start justify-start'>
-            <p className='Orbitron text-green-600 text-5xl mt-5 ml-10'>{Selected_Site}</p>
-        </div>
-        <div className='w-1/2 flex flex-row items-end justify-end'>
-
-            <section 
-            onClick={() => set_Selected_Site('About_Me_Page')}
-            className='Orbitron text-white text-lg m-10 hover:text-xl hover:text-lime-500'
-            >
-                About Me
-            </section>
-            
-            <section 
-            onClick={() => set_Selected_Site('Portfolio_Page')}
-            className='Orbitron text-white text-lg m-10 hover:text-xl hover:text-rose-600'
-            >
-                Portfolio
-            </section>
-            
-            <section 
-            onClick={() => set_Selected_Site('Services_Page')}
-            className='Orbitron text-white text-lg m-10 hover:text-xl hover:text-cyan-400'
-            >
-                Services
-            </section>
-
-            <section 
-            onClick={() => set_Selected_Site('Contact_Me_Page')}
-            className='Orbitron text-white text-lg m-10 hover:text-xl hover:text-orange-500'
-            >
-                Contact Me
-            </section>
-
-        </div>
-    </div>
-    );
+export default function Header({ PageName }) {
+  return (
+    <>
+      <div className="grid grid-rows-2 grid-cols-5 gap-5 p-5 text-center">
+        <Link to="/" className="grid place-content-center row-span-2 col-span-2 ">
+          <div className="text-9xl">&#8592;</div>
+        </Link>
+        <h1 className="row-span-1 col-span-3 font-bold tracking-widest text-black text-5xl Orbitron">
+          Kilian Voss
+        </h1>
+        <h2 className="row-span-1 col-span-3 tracking-widest text-black text-2xl Orbitron">
+          {PageName}
+        </h2>
+      </div>
+    </>
+  );
 }
-
-export default navbar;
