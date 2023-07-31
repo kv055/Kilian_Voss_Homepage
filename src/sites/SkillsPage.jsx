@@ -34,311 +34,96 @@ export default function Skills_Page() {
         <div className="m-5 md:m-10 xl:m-28 bg-slate-300 max-h-screen rounded-xl opacity-60 justify-center">
           {/* Layer 3: */}
           <Header PageName="Technical Skills" />
-          <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl justify-center">
-            <h3>Languages</h3>
-            <ul>
-              <li className="grid grid-cols-5 grid-rows-3">
-                
-                <div className="row-span-2 col-span-2">
-                  <img src={HtmlIcon} alt="HTML" className="w-16 h-16" />
-                  <img src={CSSIcon} alt="CSS" className="w-16 h-16" />
-                  <h4 className="row-span-1 col-span-1">HTML/CSS</h4>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+          <div className="my-10">
+            <h3 className="text-center text-xl Orbitron tracking-widest">
+              Languages
+            </h3>
+            <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="flex flex-row">
+                <img src={HtmlIcon} alt="HTML" className="w-16 h-16" />
+                <img src={CSSIcon} alt="CSS" className="w-16 h-16" />
+              </div>
+              <img
+                src={JavascriptIcon}
+                alt="JavaScript"
+                className=" w-16 h-16"
+              />
+              <img
+                src={TypescriptIcon}
+                alt="Typescript"
+                className=" w-16 h-16"
+              />
+              <img
+                src={PythonIcon}
+                alt="Python"
+                className="w-16 h-16 hover:invert"
+              />
+            </div>
+          </div>
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                
-                <img
-                  src={JavascriptIcon}
-                  alt="JavaScript"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <h4 className="row-span-1 col-span-1">Javascript</h4>
-                
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+          <div className="my-10">
+            <h3 className="text-center text-xl Orbitron tracking-widest">
+              Front-end
+            </h3>
+            <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly">
+              <img src={ReactIcon} alt="ReactJS" className="hover:shadow-2xl hover:shadow-red-700 w-16 h-16" />
+              <img src={TailwindIcon} alt="Tailwind" className="hover:shadow-2xl hover:shadow-red-700 w-16 h-16" />
+            </div>
+          </div>
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">TypeScript</h4>
-                <img
-                  src={TypescriptIcon}
-                  alt="Typescript"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+          <div className="my-10">
+            <h3 className="text-center text-xl Orbitron tracking-widest">
+              Back-end
+            </h3>
+            <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl justify-center grid grid-cols-5 grid-rows-2">
+              <img src={FlaskIcon} alt="Flask" className="w-16 h-16" />
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Python</h4>
-                <img
-                  src={PythonIcon}
-                  alt="Python"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-            </ul>
+              <img src={NodeJSIcon} alt="NodeJS" className="w-16 h-16" />
 
-            <h3>Front-end</h3>
-            <ul>
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">React</h4>
-                <img
-                  src={ReactIcon}
-                  alt="ReactJS"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+              <img src={NextJSIcon} alt="NextJS" className="w-16 h-16" />
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Tailwind CSS</h4>
-                <img
-                  src={TailwindIcon}
-                  alt="Tailwind"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-            </ul>
+              <img src={MysqlIcon} alt="Mysql" className="w-16 h-16" />
 
-            <h3>Back-end</h3>
-            <ul>
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Flask</h4>
-                <img
-                  src={FlaskIcon}
-                  alt="Flask"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+              <img src={AWSIcon} alt="AWS SQS" className="w-16 h-16" />
+            </div>
+          </div>
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Express JS</h4>
-                <img
-                  src={NodeJSIcon}
-                  alt="NodeJS"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+          <div className="my-10">
+            <h3 className="text-center text-xl Orbitron tracking-widest">
+              Deployment
+            </h3>
+            <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl justify-center grid grid-cols-5 grid-rows-2">
+              {/* <h4 className="row-span-1 col-span-1">Linux Server</h4> */}
+              <img src={LinuxIcon} alt="Linux Server" className="w-16 h-16" />
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Next JS</h4>
-                <img
-                  src={NextJSIcon}
-                  alt="NextJS"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+              {/* <h4 className="row-span-1 col-span-1">AWS S3</h4> */}
+              <div className="flex flex-row">
+                <img src={AWSS3Icon} alt="AWS S3" className="w-16 h-16" />
+                <img src={DockerIcon} alt="Docker" className="w-16 h-16" />
+              </div>
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">MySQL</h4>
-                <img
-                  src={MysqlIcon}
-                  alt="Mysql"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
+              {/* <h4 className="row-span-1 col-span-1">AWS AppRunner</h4> */}
+              <div className="flex flex-row">
+                <img src={AWSIcon} alt="AWS Apprunner" className="w-16 h-16" />
+                <img src={DockerIcon} alt="Docker" className="w-16 h-16" />
+              </div>
 
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">AWS SQS</h4>
-                <img
-                  src={AWSIcon}
-                  alt="AWS SQS"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-            </ul>
+              {/* <h4 className="row-span-1 col-span-1">AWS Docker on Lightsail</h4> */}
+              <img src={AWSIcon} alt="AWS Lightsail" className="w-16 h-16" />
+            </div>
+          </div>
+          <div className="my-10">
+            <h3 className="text-center text-xl Orbitron tracking-widest">
+              Dev Tools
+            </h3>
+            <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl justify-center grid grid-cols-5 grid-rows-2">
+              <div className="flex flex-row">
+                <img src={GitIcon} alt="Git" className="w-16 h-16" />
+                <img src={GithubIcon} alt="Github" className="w-16 h-16" />
+              </div>
 
-            <h3>Deployment</h3>
-            <ul>
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Linux Server</h4>
-                <img
-                  src={LinuxIcon}
-                  alt="Linux Server"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">AWS S3</h4>
-                <div className="row-span-2 col-span-2">
-                  <img
-                    src={AWSS3Icon}
-                    alt="AWS S3"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                  <img
-                    src={DockerIcon}
-                    alt="Docker"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">AWS AppRunner</h4>
-                <div className="row-span-2 col-span-2">
-                  <img
-                    src={AWSIcon}
-                    alt="AWS Apprunner"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                  <img
-                    src={DockerIcon}
-                    alt="Docker"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">
-                  AWS Docker on Lightsail
-                </h4>
-                <img
-                  src={AWSIcon}
-                  alt="AWS Lightsail"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-            </ul>
-
-            <h3>Dev Tools</h3>
-            <ul>
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Git + GitHub</h4>
-                <div className="row-span-2 col-span-2">
-                  <img
-                    src={GitIcon}
-                    alt="Git"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                  <img
-                    src={GithubIcon}
-                    alt="Github"
-                    className="row-span-2 col-span-2 w-16 h-16"
-                  />
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Docker</h4>
-                <img
-                  src={DockerIcon}
-                  alt="Docker"
-                  className="row-span-2 col-span-2 w-16 h-16"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-
-              <li className="grid grid-cols-5 grid-rows-3">
-                <h4 className="row-span-1 col-span-1">Testing</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  culpa repellat ad laudantium iste sunt fuga eligendi aut
-                  dolores veniam ullam harum itaque delectus, mollitia vero quod
-                  consectetur quis a.
-                </p>
-              </li>
-            </ul>
+              <img src={DockerIcon} alt="Docker" className="w-16 h-16" />
+            </div>
           </div>
         </div>
       </div>
