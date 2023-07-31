@@ -1,6 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "../node_modules/react-pdf/dist/esm/Page/AnnotationLayer.css";
+@import "../node_modules/react-pdf/dist/esm/Page/TextLayer.css";
+
 @font-face {
   font-family: 'Orbitron-Regular';
   src: url('./assets/fonts/Orbitron/Orbitron-Regular.ttf') format('truetype');
