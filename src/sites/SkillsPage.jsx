@@ -24,14 +24,14 @@ export default function Skills_Page() {
     <>
       {/* Layer 1: background gif */}
       <div
-        className="bg-no-repeat min-h-screen p-5 sm:p-10 xl:p-28"
+        className="flex bg-no-repeat min-h-screen p-1 justify-center"
         style={{
           backgroundImage: `url(${Background})`,
           backgroundSize: "cover",
         }}
       >
         {/* Layer 2: the white transparent board with rounded corners */}
-        <div className="m-5 md:m-10 xl:m-28 bg-slate-300 max-h-screen rounded-xl opacity-60 justify-center">
+        <div className="m-2 md:m-8 bg-slate-300 max-h-screen max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 xl:p-10">
           {/* Layer 3: */}
           <Header PageName="Technical Skills" />
           <div className="my-10">
