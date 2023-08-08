@@ -7,11 +7,11 @@ const PicCV = () => {
     <div>
       <div className="flex flex-col md:flex-row justify-evenly align-middle">
         <img
-          className="w-1/3 h-2/3 rounded-xl"
+          className="m-8 w-1/3 h-2/3 rounded-xl "
           src={ProfilePicture}
           alt=""
         />
-        <div className="rounded-xl">
+        <div className="flex flex-col mx-auto">
           <h3 className="Orbitron p-5 tracking-widest">CV:</h3>
           <PDFViewer PdfDoc={CV} />
         </div>
