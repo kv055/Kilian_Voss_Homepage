@@ -2,7 +2,7 @@ import React from "react";
 import Background from "../assets/backgrounds/space_purp.gif";
 import Header from "../components/navbar_header";
 import PicCV from "../components/ProfilepagePicCV";
-import ContactMe from "../components/ProfilepageContactMe";
+import ContactMe from "../components/contactMeFooter";
 
 export default function Profile_Page() {
   return (
@@ -18,88 +18,57 @@ export default function Profile_Page() {
         {/* Layer 2: the white transparent board with rounded corners */}
         <div className="m-2 md:m-8 bg-slate-300 max-h-screen max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 xl:p-10">
           {/* Layer 3: */}
-          <Header PageName="Profile" />
-          <PicCV />
-          <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
-          <div className="md:m-5 bg-white max-h-screen rounded-xl justify-center ">
-            <div className="grid grid-cols-2 grid-rows-2">
-              <p className="row-span-1 col-span-2 Orbitron p-5 leading-6 text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                maiores eum. Id sint optio, quo quis laborum vero? Non
-                reprehenderit animi expedita commodi ducimus tenetur architecto
-                dignissimos, soluta ullam voluptatem! At necessitatibus adipisci
-                harum doloribus, commodi quod magni est veniam illum pariatur
-                sed maxime deserunt, voluptatibus iste laboriosam aliquid
-                debitis? Laudantium, possimus? Accusamus nostrum quis nulla
-                autem iste dolor sapiente. Minima corporis dolorum architecto
-                libero explicabo! Iste officiis rem tempora consequuntur quia
-                quasi, iusto maxime eaque expedita exercitationem quos
-                doloremque, illo ullam quam ipsam consequatur ratione cumque
-                veritatis est? Laborum. Nemo fugit, earum odit, mollitia cum
-                iure similique eveniet amet dolorem voluptate iste quaerat
-                deleniti eaque fugiat praesentium neque consequuntur, ipsa qui?
-                Eaque consequuntur autem dolore eligendi quas laudantium
-                dolorem. Nihil nemo voluptatibus nisi ea, nam optio deleniti
-                corporis cum consequuntur hic nulla beatae illum vero
-                accusantium modi minima ducimus necessitatibus temporibus
-                suscipit architecto blanditiis tempore. Numquam dolorum deleniti
-                odit. Provident ipsum ullam nesciunt! Aliquid omnis quis error
-                odit distinctio non eos veritatis ex. Dolore doloremque itaque
-                fugiat? A ut sequi enim atque temporibus harum sint? Quo animi
-                facere deserunt! Cupiditate, dolore velit fugiat tempore ducimus
-                repellendus deleniti, molestias, eaque id facere quasi aliquam
-                repellat necessitatibus mollitia excepturi aut voluptate soluta
-                omnis dolorem. Labore distinctio ab voluptates vel est. Quas.
-                Eligendi ducimus expedita doloribus. Perferendis optio commodi
-                dignissimos temporibus aut excepturi quo nihil dolor doloribus a
-                reiciendis itaque minus quod vitae quae sunt officiis, illo
-                repellendus placeat maiores voluptates dicta! Quidem commodi
-                reprehenderit nisi error laudantium qui perferendis laborum,
-                expedita ullam labore obcaecati accusamus aliquid exercitationem
-                officia. Minima aut, aperiam error fuga dignissimos nihil
-                recusandae totam atque repellendus alias nobis. Laudantium saepe
-                maxime rerum quia odio veritatis doloribus reprehenderit autem
-                ducimus! Voluptatum nisi perspiciatis et veritatis deserunt
-                aspernatur autem, ipsam porro cum nostrum repudiandae ullam
-                voluptas sunt atque sit eius. Minus voluptatum explicabo
-                suscipit reiciendis quod commodi dignissimos ea porro, eos rerum
-                quam consectetur repudiandae inventore magnam itaque vitae ipsam
-                cumque eligendi hic, sint dicta labore! Nemo ad ea atque. Ea
-                ipsa officia est quia ab porro, iste minima voluptate numquam
-                facilis dolore quibusdam, modi dicta recusandae. Dolorum
-                distinctio repudiandae, reiciendis error commodi sunt, voluptas
-                eum praesentium obcaecati, aspernatur laudantium. Odit modi
-                harum corrupti voluptatem ratione iste reiciendis. Repudiandae
-                eius corrupti non blanditiis, obcaecati corporis provident?
-                Provident in deserunt cupiditate autem natus consequuntur eos
-                amet. Incidunt non assumenda iure et! Nam, architecto officia?
-                Dolorum fugit totam dolores voluptatum architecto voluptatem
-                ipsa deleniti, error, quod, nulla sapiente fugiat porro
-                perspiciatis labore libero mollitia cumque neque deserunt ipsam
-                beatae blanditiis laborum. Asperiores. Consequatur repellat
-                delectus esse qui sequi veniam dignissimos quisquam. Natus
-                sapiente vero veritatis rerum similique. Totam laboriosam iste
-                esse possimus doloribus porro eaque delectus vero! Obcaecati
-                quod officia minus nostrum. Laudantium inventore tempora
-                repellendus incidunt, exercitationem ipsa! Magnam sunt a veniam
-                itaque expedita cum modi nesciunt quae voluptatem quasi
-                perspiciatis vel eius, illum beatae commodi ab soluta quia
-                laboriosam! Nam? Esse mollitia deserunt magnam exercitationem
-                enim earum numquam eos debitis! Dignissimos, a eligendi nemo
-                omnis sint aliquid, fuga natus nulla quos iure quod
-                necessitatibus iste odio minus qui dolor nihil. Ipsum qui totam
-                harum eum quos perspiciatis doloribus corporis odio. Aut vitae
-                ad iste odit, minus, quo doloremque est perspiciatis, ex non
-                saepe accusantium assumenda maxime adipisci quidem accusamus
-                amet. Voluptatibus, eos aspernatur voluptate recusandae
-                reprehenderit, dignissimos, ea blanditiis quibusdam dolorum
-                tempore deleniti. Consectetur autem dolor ipsam velit quasi.
-                Recusandae, odio doloremque. Pariatur, ullam. Illum dolore unde
-                quae? Accusamus, facilis! Non maxime id eos consequuntur! Nihil
-                sint deserunt perferendis, voluptate debitis cum! Tenetur earum
-                eius distinctio! Quam facere perspiciatis ullam consequatur
-                magnam, nam rerum, nesciunt saepe iste blanditiis ducimus
-                nostrum!
+          <div className="overflow-y-scroll h-5/6">
+            <Header PageName="Profile" />
+            <PicCV />
+            <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
+            <div className="md:m-5 bg-white rounded-xl justify-center">
+              <p className="row-span-1 col-span-2 p-5 leading-6 text-lg">
+                I am a dedicated and innovative Software Engineer with
+                comprehensive experience in front-end and back-end development.
+                I have a proven track record of delivering top-tier projects to
+                a global clientele. My proficiency in an array of programming
+                languages, frameworks, and databases allows me to employ them
+                effectively in delivering robust software solutions. One of my
+                key strengths is my ability to handle remote work and
+                collaborate effectively with teams to ensure timely project
+                delivery. I have successfully spearheaded the development and
+                deployment of infrastructure supporting trading algorithms for
+                various financial assets. Additionally, I engineered a
+                comprehensive database for storing and updating historical price
+                data of over 15,000 financial assets. My expertise also extends
+                to designing and implementing scalable backtesting programs for
+                generating historical trade signals. I have utilized libraries
+                such as vectorBT for trade signal profitability assessments and
+                comprehensive statistical analyses. Furthermore, I have
+                successfully deployed and tested trading strategies for live
+                trading on platforms like Alpaca, Binance, and Kraken. In my
+                freelance work, I have led both front-end and back-end software
+                development, providing robust full-stack solutions for
+                international clients. Notably, I developed a configuration
+                portal for a leading electrical engineering firm. As a coding
+                instructor, I have overseen the instruction of fundamental
+                programming concepts for high school students, utilizing
+                interactive methodologies. I have also delivered structured,
+                part-time Python lessons tailored to the high school education
+                level. During my tenure as a Frontend Developer at CampusM21, I
+                managed CMS integration and homepage maintenance, improving
+                responsiveness and overall user experience. I led the system
+                migration from Joomla to Strapi and integrated analytics
+                software into the homepage, building a custom dashboard for
+                real-time trend tracking. Additionally, I assisted in the
+                creation of new UI components to enhance website aesthetics and
+                usability. I hold a Bachelor of Science in Computer Science from
+                the Technical University of Munich and a Fachabitur in Art
+                Installations from the Technical College of Bavaria. My
+                technical skills include proficiency in front-end technologies
+                such as HTML/CSS, Tailwind CSS, Bootstrap CSS, JavaScript,
+                React.js, D3.js, and Plotly.js. On the back-end, I am skilled in
+                Node.js, Express.js, MongoDB, Python, Flask, Pandas, SciPy,
+                MySQL, and Strapi CMS. I am also experienced in using tools like
+                Docker and Git + Github for version control, and I have
+                deployment experience with AWS services such as EC2 (Bare metal
+                Linux) and Lightsail.
               </p>
             </div>
           </div>
