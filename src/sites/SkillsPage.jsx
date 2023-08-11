@@ -34,7 +34,7 @@ export default function Skills_Page() {
         }}
       >
         {/* Layer 2: the white transparent board with rounded corners */}
-        <div className="m-2 md:m-8 bg-slate-300 h-screen max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 xl:p-10">
+        <div className="m-2 md:m-8 bg-slate-300 h-screen md:w-3/4 max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 xl:p-10">
           {/* Layer 3: */}
           <Header PageName="Technical Skills" />
           {/* Layer 4:  */}
