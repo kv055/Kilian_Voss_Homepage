@@ -24,11 +24,11 @@ const Landing_Page = () => {
             <h4 className=" m-5 tracking-widest text-black text-2xl Orbitron">
               Full stack development
             </h4>
-            <div className="flex xl:flex-row flex-col mx-auto">
+            <div className="flex xl:flex-row flex-col justify-evenly">
               <Link to="/Profile">
                 <button
                   type="button"
-                  className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="m-6 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
                 >
                   Profile
                 </button>
@@ -36,7 +36,7 @@ const Landing_Page = () => {
               <Link to="/Skills">
                 <button
                   type="button"
-                  className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="m-6 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500"
                 >
                   Skills
                 </button>
@@ -44,7 +44,7 @@ const Landing_Page = () => {
               <Link to="/Portfolio">
                 <button
                   type="button"
-                  className="m-6 sm:m-5 xl:m-20 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="m-6 p-10 rounded-xl Orbitron hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500"
                 >
                   Portfolio
                 </button>
