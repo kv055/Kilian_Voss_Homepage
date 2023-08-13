@@ -8,20 +8,20 @@ const Landing_Page = () => {
     <>
       {/* Layer 1: background gif */}
       <div
-        className="bg-no-repeat min-h-screen p-5 sm:p-10 xl:p-28"
+        className="flex bg-no-repeat h-screen p-5 sm:p-10 xl:p-28 justify-center items-center"
         style={{
           backgroundImage: `url(${Background})`,
           backgroundSize: "cover",
         }}
       >
         {/* Layer 2: the white transparent board with rounded corners */}
-        <div className="m-5 md:m-10 xl:m-28 bg-slate-300 max-h-screen rounded-xl opacity-60 justify-center scrollable-content">
+        <div className="flex m-5 md:m-10 xl:m-28 bg-slate-300 h-max rounded-xl opacity-60 justify-center items-center scrollable-content">
           {/* Layer 3: */}
-          <div className="flex p-10 flex-col text-center">
-            <h1 className="m-5 font-bold tracking-widest text-black text-5xl Orbitron">
+          <div className="flex md:p-10 flex-col text-center justify-start md:justify-evenly">
+            <h1 className="m-5 font-bold tracking-widest text-black text-2xl md:text-5xl Orbitron">
               Kilian Voss
             </h1>
-            <h4 className=" m-5 tracking-widest text-black text-2xl Orbitron">
+            <h4 className=" tracking-widest text-black text-lg md:text-2xl Orbitron px-5">
               Full stack development
             </h4>
             <div className="flex xl:flex-row flex-col justify-evenly">
