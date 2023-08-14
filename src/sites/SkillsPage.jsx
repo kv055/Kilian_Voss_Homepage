@@ -6,6 +6,8 @@ import AWSIcon from "../assets/icons/AWS_icon.svg";
 import AWSIconColor from "../assets/icons/AWS_icon_color.svg";
 import AWSS3Icon from "../assets/icons/AWS_S3_icon.svg";
 import AWSS3IconColor from "../assets/icons/AWS_S3_icon_color.svg";
+import BootstrapIcon from "../assets/icons/Bootstrap_icon.svg";
+import BootstrapIconColor from "../assets/icons/Bootstrap_icon_color.svg";
 import CSSIcon from "../assets/icons/CSS_icon.svg";
 import CSSIconColor from "../assets/icons/CSS_icon_color.svg";
 import DockerIcon from "../assets/icons/Docker_icon.svg";
@@ -59,32 +61,33 @@ export default function Skills_Page() {
               </h3>
               <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="flex flex-col m-5">
-                  <div className="flex flex-row items-center">
+                  <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16">
                       <img
                         src={HtmlIcon}
                         alt="HTML"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={HtmlIconColor}
                         alt="HTML"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                     <div className="relative w-16 h-16">
                       <img
                         src={CSSIcon}
                         alt="CSS"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={CSSIconColor}
                         alt="CSS"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                   </div>
+
                   <p>HTML+CSS</p>
                 </div>
 
@@ -172,6 +175,21 @@ export default function Skills_Page() {
                     />
                   </div>
                   <p>Tailwind CSS</p>
+                </div>
+                <div className="m-5 flex flex-col items-center">
+                  <div className="relative w-16 h-16">
+                    <img
+                      src={BootstrapIcon}
+                      alt="Bootstrap"
+                      className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                    />
+                    <img
+                      src={BootstrapIconColor}
+                      alt="Bootstrap"
+                      className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                    />
+                  </div>
+                  <p>Bootstrap CSS</p>
                 </div>
               </div>
             </div>
@@ -338,58 +356,58 @@ export default function Skills_Page() {
                   <p>AWS S3</p>
                 </div>
                 <div className="m-5 flex flex-col">
-                  <div className="flex flex-row items-center">
+                  <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16 mx-2">
                       <img
                         src={AWSIcon}
                         alt="AWS Apprunner"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={AWSIconColor}
                         alt="AWS Apprunner"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                     <div className="relative w-16 h-16">
                       <img
                         src={DockerIcon}
                         alt="Docker"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={DockerIconColor}
                         alt="Docker"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                   </div>
                   <p>AWS Apprunner</p>
                 </div>{" "}
                 <div className="m-5 flex flex-col">
-                  <div className="flex flex-row items-center">
+                  <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16 mx-2">
                       <img
                         src={AWSIcon}
                         alt="AWS Apprunner"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={AWSIconColor}
                         alt="AWS Apprunner"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                     <div className="relative w-16 h-16">
                       <img
                         src={DockerIcon}
                         alt="Docker"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={DockerIconColor}
                         alt="Docker"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                   </div>
@@ -404,29 +422,29 @@ export default function Skills_Page() {
               </h3>
               <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="m-5 flex flex-col">
-                  <div className="flex flex-row items-center">
+                  <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16 mx-2">
                       <img
                         src={GitIcon}
                         alt="Git"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={GitIconColor}
                         alt="Git"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                     <div className="relative w-16 h-16">
                       <img
                         src={GithubIcon}
                         alt="Github"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 hover:opacity-0"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-100 group-hover:opacity-0"
                       />
                       <img
                         src={GithubIconColor}
                         alt="Github"
-                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100"
+                        className="absolute w-full h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"
                       />
                     </div>
                   </div>
