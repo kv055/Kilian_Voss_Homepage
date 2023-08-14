@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-
+import DownloadIcon from "../assets/icons/Download_icon.svg";
+import PreviewIcon from "../assets/icons/Preview_icon.svg";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const PDFViewer = ({ PdfDoc }) => {
@@ -11,16 +12,40 @@ const PDFViewer = ({ PdfDoc }) => {
   };
 
   return (
-    <div className={`relative cursor-pointer group ${isExpanded ? 'fixed top-0 left-0 h-full w-full z-50' : ''}`} onClick={handleClick}>
-      <Document file={PdfDoc}>
-        <Page pageNumber={1} scale={isExpanded ? 1 : 0.5} />
+    <div
+      className={`flex flex-col md:flex-row cursor-pointer group ${
+        isExpanded ? " h-full w-full flex-col md:flex-col" : ""
+      }`}
+      >
+      <Document file={PdfDoc} className="">
+        <Page
+          pageNumber={1}
+          scale={isExpanded ? 1.3 : 0.5}
+          onClick={handleClick}
+        />
       </Document>
-      {isExpanded && <button className="absolute top-0 right-0 m-4 p-2 bg-red-500 text-white" onClick={handleClick}>Close</button>}
-      {!isExpanded && (
-        <div className="absolute top-1/2 left-1/2 rounded-xl Orbitron transform -translate-x-1/2 -translate-y-1/2 flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-          <button className="p-2 bg-blue-500 text-white" onClick={handleClick}>Preview</button>
-          <a href={PdfDoc} download className="p-2 bg-green-500 text-white">Download</a>
-        </div>
+      <div className="flex flex-row md:flex-col justify-evenly">
+        <img
+          src={PreviewIcon}
+          className="w-20 h-20 mx-5"
+          onClick={handleClick}
+        ></img>
+        <a href={PdfDoc} download>
+          <img
+            src={DownloadIcon}
+            className="w-20 h-20 mx-5"
+            href={PdfDoc}
+            download
+          ></img>
+        </a>
+      </div>
+      {isExpanded && (
+        <button
+          className="absolute top-0 right-0 m-4 p-2 bg-red-500 text-white"
+          onClick={handleClick}
+        >
+          Close
+        </button>
       )}
     </div>
   );
