@@ -8,7 +8,7 @@ export default function ExpandedArticle({Url, Article}) {
         <div className="flex flex-row flex-wrap justify-evenly">
           <div className="flex flex-row ">
             <a
-              href="https://abelianwebpagehosting.s3-website-us-east-1.amazonaws.com/"
+              href={Url}
               className="Orbitron text-lg tracking-wide font-bold"
             >
               Visit: {Url}
