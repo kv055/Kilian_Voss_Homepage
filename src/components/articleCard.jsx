@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../index.css";
 import ExpandedArticle from "../components/expandedArticle";
 export default function ArticleCard({
+  ExpansionState,
   Title,
   Description,
   Icons,
@@ -30,11 +31,11 @@ export default function ArticleCard({
             </button>
           )}
 
-          <h3 className="Orbitron font-bold text-lg tracking-widest">
+          <h3 className="Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1">
             {Title}
           </h3>
 
-          <div className="grid grid-flow-col">
+          <div className="grid grid-flow-col col-span-2 md:col-span-1">
             {Icons.map((item) => (
               <img src={item} className=" w-8 h-8 mx-3" />
             ))}

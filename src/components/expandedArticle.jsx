@@ -19,7 +19,7 @@ export default function ExpandedArticle({Url, Article}) {
         <h4 className="Orbitron text-lg tracking-wide font-bold">
           The Process:
         </h4>
-        <p className="p-5">{Article}</p>
+        <p className="p-5 leading-9 tracking-wide text-lg text-left">{Article}</p>
       </div>
     </>
   );
