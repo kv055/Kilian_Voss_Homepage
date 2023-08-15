@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import "../index.css";
 import ExpandedArticle from "../components/expandedArticle";
-
-export default function ArticleCard({Title, Description, Icons, Article, Url}) {
+export default function ArticleCard({
+  Title,
+  Description,
+  Icons,
+  Article,
+  Url,
+  Background,
+}) {
   let [isExpanded, setIsExpanded] = useState(false);
   const handleExpansion = () => {
     setIsExpanded(!isExpanded);
@@ -11,13 +17,13 @@ export default function ArticleCard({Title, Description, Icons, Article, Url}) {
     <>
       <div
         className={`group relative ${
-          isExpanded ? "basis-full bg-white" : "basis-2/5"
-        } bg-white rounded-xl p-5`}
+          isExpanded ? "col-span-full order-first" : "col-span-1"
+        } bg-white rounded-xl p-5 mb-5`}
       >
-        <div className="grid grid-cols-2 grid-rows-2 gap-3">
+        <div className="grid grid-cols-2 auto-rows-auto gap-3">
           {isExpanded && (
             <button
-              className="visible col-span-2 p-2 bg-blue-500 text-white rounded-xl Orbitron"
+              className="visible col-span-2 p-2 border-black text-black border-solid border-4 rounded-xl Orbitron"
               onClick={handleExpansion}
             >
               Close
@@ -33,6 +39,8 @@ export default function ArticleCard({Title, Description, Icons, Article, Url}) {
               <img src={item} className=" w-8 h-8 mx-3" />
             ))}
           </div>
+
+          {!isExpanded && <img src={Background} className="col-span-2"></img>}
 
           {!isExpanded && (
             <p className="visible text-sm col-span-2">{Description}</p>
