@@ -29,6 +29,7 @@ import SupabaseIcon from "../assets/icons/Supabase_icon.svg";
 import TailwindIcon from "../assets/icons/Tailwind_icon.svg";
 import TypescriptIcon from "../assets/icons/Typescript_icon.svg";
 export default function Portfolio_Page() {
+  // let [isExpanded, setIsExpanded] = useState(false);
   return (
     <>
       {/* Layer 1: background gif */}
@@ -61,9 +62,7 @@ export default function Portfolio_Page() {
               ]}
               Article={`Intro:
                The blog will be split into 5 chapters, divided into sections starting with elaborating on which tech stack I have used and why, then outlining the required functionality of the website, the design, and layout, the process of implementing a cms system, building a login section as well as a blog section and then finally documenting the deployment of the frontend and the backend on Amazon AWS.
-              I am writing this blog to demonstrate my development practices, my skill level and furthermore to get some feedback on this project. To check it out yourself, the site is currently hosted under this S3 bucket link:
-              http://abelianwebpagehosting.s3-website-us-east-1.amazonaws.com/#
-              (I will update it as soon as a proper domain name has been implemented)  
+              I am writing this blog to demonstrate my development practices, my skill level and furthermore to get some feedback on this project. 
               Objective and Functionality:
               The task was to build a clean and minimalistic web portal for a startup in the financial services industry with the name Abelian Capital. The startup in question is an asset manager specialized in developing and deploying algorithmic trading strategies, it is currently in an early pre-seed investment stage. The idea is that in its early stages, it will be mainly investors and early access users who will test the company’s products and receive news about the company. Considering that funding is tight and also the fact that marketing is not yet considered an important factor, the development of the website should be as cost-effective and time-saving as possible.
               The first page shown to a user is the landing page where only the logo and a navbar are shown, the navbar has links to 4 subpages with information about the Company and its objectives, the founders, a login section where investors and early access customers can view and test the product (more on that in a separate post), and a blog section where news about the company will be shared.
@@ -108,9 +107,7 @@ export default function Portfolio_Page() {
               This project though is just the first sketch of what later could be the dashboard mentioned above.
               The main thing I wanted to achieve with this project was to test different plotting libraries, mainly for displaying price data and to get a grip on data visualization in general.
               Furthermore, the project was very helpful in teaching me more about react js itself.
-              It is currently accessible under this S3 bucket link:
-              https://abelianterminaldemo.s3.amazonaws.com/index.html
-              
+             
               
               The User experience:
               
