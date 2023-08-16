@@ -4,7 +4,9 @@ import DownloadIcon from "../assets/icons/Download_icon.svg";
 import PreviewIcon from "../assets/icons/Preview_icon.svg";
 import ForwardArrowIcon from "../assets/icons/Forward_arrow_icon.svg";
 import BackwardArrowIcon from "../assets/icons/Backward_arrow_icon.svg";
-import CV from "../assets/CV23.pdf";
+// import CV from "../assets/CV23.pdf";
+import CV from "../assets/KV_CV23.pdf";
+
 import ProfilePicture from "../assets/Kilian.jpg";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;

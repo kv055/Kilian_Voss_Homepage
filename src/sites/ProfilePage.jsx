@@ -23,50 +23,19 @@ export default function Profile_Page() {
           <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
           <div className="md:m-5 bg-slate-300 rounded-xl justify-center">
             <p className="row-span-1 col-span-2 p-5 leading-9 tracking-wide text-lg text-left">
-              I am a dedicated and innovative Software Engineer with
-              comprehensive experience in front-end and back-end development. I
-              have a proven track record of delivering top-tier projects to a
-              global clientele. My proficiency in an array of programming
-              languages, frameworks, and databases allows me to employ them
-              effectively in delivering robust software solutions. One of my key
-              strengths is my ability to handle remote work and collaborate
-              effectively with teams to ensure timely project delivery. I have
-              successfully spearheaded the development and deployment of
-              infrastructure supporting trading algorithms for various financial
-              assets. Additionally, I engineered a comprehensive database for
-              storing and updating historical price data of over 15,000
-              financial assets. My expertise also extends to designing and
-              implementing scalable backtesting programs for generating
-              historical trade signals. I have utilized libraries such as
-              vectorBT for trade signal profitability assessments and
-              comprehensive statistical analyses. Furthermore, I have
-              successfully deployed and tested trading strategies for live
-              trading on platforms like Alpaca, Binance, and Kraken. In my
-              freelance work, I have led both front-end and back-end software
-              development, providing robust full-stack solutions for
-              international clients. Notably, I developed a configuration portal
-              for a leading electrical engineering firm. As a coding instructor,
-              I have overseen the instruction of fundamental programming
-              concepts for high school students, utilizing interactive
-              methodologies. I have also delivered structured, part-time Python
-              lessons tailored to the high school education level. During my
-              tenure as a Frontend Developer at CampusM21, I managed CMS
-              integration and homepage maintenance, improving responsiveness and
-              overall user experience. I led the system migration from Joomla to
-              Strapi and integrated analytics software into the homepage,
-              building a custom dashboard for real-time trend tracking.
-              Additionally, I assisted in the creation of new UI components to
-              enhance website aesthetics and usability. I hold a Bachelor of
-              Science in Computer Science from the Technical University of
-              Munich and a Fachabitur in Art Installations from the Technical
-              College of Bavaria. My technical skills include proficiency in
-              front-end technologies such as HTML/CSS, Tailwind CSS, Bootstrap
-              CSS, JavaScript, React.js, D3.js, and Plotly.js. On the back-end,
-              I am skilled in Node.js, Express.js, MongoDB, Python, Flask,
-              Pandas, SciPy, MySQL, and Strapi CMS. I am also experienced in
-              using tools like Docker and Git + Github for version control, and
-              I have deployment experience with AWS services such as EC2 (Bare
-              metal Linux) and Lightsail.
+              My name is Kilian Voss, I am a 26 year old completely self taught
+              full stack developer with 3+ years of experience working mostly
+              remotely and self employed for independent clients, as well as in
+              the corporate world. I have delivered an extensive list of
+              projects to clients and by doing so mainly become proficient in
+              Javascript and Python including various associated Libraries,
+              Frameworks such as React, NextJS and Flask to name a few. In
+              addition to the technical side I have a passion for creative UI
+              implementations and design experience working with software such
+              as Figma as well as the Adobe suite. Currently based in Melbourne,
+              Victoria I am looking for short term contract work as well as part
+              time employment in roles preferably associated with the
+              technologies listed above.
             </p>
           </div>
           <ContactMe />
