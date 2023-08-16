@@ -47,7 +47,7 @@ export default function Portfolio_Page() {
         }}
       >
         {/* Layer 2: the white transparent board with rounded corners */}
-        <div className="bg-slate-300 h-auto md:w-3/4 max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 overflow-y-scroll">
+        <div className="bg-slate-300-60 h-auto md:w-3/4 max-w-screen-xl rounded-xl justify-center text-center p-2 overflow-y-scroll">
           {/* Layer 3: */}
           <Header PageName="Portfolio" />
           {/* <div className="flex flex-row flex-wrap justify-around"> */}

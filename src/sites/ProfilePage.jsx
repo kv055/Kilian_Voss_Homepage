@@ -16,12 +16,12 @@ export default function Profile_Page() {
         }}
       >
         {/* Layer 2: the white transparent board with rounded corners */}
-        <div className="bg-slate-300 h-auto md:w-3/4 max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2 overflow-y-scroll">
+        <div className="bg-slate-300-60 h-auto md:w-3/4 max-w-screen-xl rounded-xl justify-center text-center p-2 overflow-y-scroll">
           <Header PageName="Profile" />
           <PicCV />
           {/* Layer 3: */}
           <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
-          <div className="md:m-5 bg-white rounded-xl justify-center">
+          <div className="md:m-5 bg-slate-300 rounded-xl justify-center">
             <p className="row-span-1 col-span-2 p-5 leading-9 tracking-wide text-lg text-left">
               I am a dedicated and innovative Software Engineer with
               comprehensive experience in front-end and back-end development. I

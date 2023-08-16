@@ -18,7 +18,7 @@ export default function ArticleCard({
         
         className={`group relative ${
           isExpanded ? "col-span-full order-first" : "col-span-2 lg:col-span-1"
-        } bg-white rounded-xl p-5 mb-5`}
+        } bg-slate-300 rounded-xl p-5 mb-5`}
       >
         <div className="grid grid-cols-2 auto-rows-auto gap-3">
           {isExpanded && (

@@ -52,14 +52,14 @@ export default function Skills_Page() {
           backgroundSize: "cover",
         }}
       >
-        <div className="bg-slate-300 h-auto md:w-3/4 max-w-screen-xl rounded-xl opacity-60 justify-center text-center p-2">
+        <div className="bg-slate-300-60 h-auto md:w-3/4 max-w-screen-xl rounded-xl justify-center text-center p-2">
           <Header PageName="Technical Skills" />
           <div className="my-10 overflow-y-scroll h-3/4">
             <div className="my-10">
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Languages
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="mx-5  md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="flex flex-col m-5">
                   <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16">
@@ -145,7 +145,7 @@ export default function Skills_Page() {
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Front-end
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly">
+              <div className="mx-5 md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly">
                 <div className="m-5 flex flex-col items-center">
                   <div className="relative w-16 h-16">
                     <img
@@ -198,7 +198,7 @@ export default function Skills_Page() {
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Back-end
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="mx-5 md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="m-5 flex flex-col items-center">
                   <div className="relative w-16 h-16">
                     <img
@@ -285,7 +285,7 @@ export default function Skills_Page() {
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Back-end CMS systems
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="mx-5 md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="m-5 flex flex-col items-center">
                   <div className="relative w-16 h-16">
                     <img
@@ -324,7 +324,7 @@ export default function Skills_Page() {
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Deployment
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="mx-5 md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="m-5 flex flex-col items-center">
                   <div className="relative w-16 h-16">
                     <img
@@ -420,7 +420,7 @@ export default function Skills_Page() {
               <h3 className="text-center text-xl Orbitron tracking-widest">
                 Dev Tools
               </h3>
-              <div className="mx-5 md:mx-10 xl:mx-28 bg-white max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
+              <div className="mx-5 md:mx-10 xl:mx-28 bg-slate-300 max-h-screen rounded-xl p-5 flex flex-row justify-evenly flex-wrap">
                 <div className="m-5 flex flex-col">
                   <div className="flex flex-row items-center group">
                     <div className="relative w-16 h-16 mx-2">
