@@ -1,6 +1,32 @@
+import AbelianWebpageBackground from "../assets/portfolio/Abelian_webpage_background.png";
+import BacktestingDashboardBackground from "../assets/portfolio/Backtesting_dashboard_background.png";
+import KilianWebpageBackground from "../assets/portfolio/Kilian_webpage_background.png";
+import SwitchboardConfiguratorBackground from "../assets/portfolio/Curntly_configurator_background.png"
+import StockpriceDatabaseBackground from "../assets/portfolio/Stockprice_database_background.png"
+import AWSIcon from "../assets/icons/AWS_icon.svg";
+import AWSS3Icon from "../assets/icons/AWS_S3_icon.svg";
+import CSSIcon from "../assets/icons/CSS_icon.svg";
+import DockerIcon from "../assets/icons/Docker_icon.svg";
+import FlaskIcon from "../assets/icons/Flask_icon.svg";
+import GitIcon from "../assets/icons/Git_icon.svg";
+import GithubIcon from "../assets/icons/Github_icon.svg";
+import HtmlIcon from "../assets/icons/Html_icon.svg";
+import JavascriptIcon from "../assets/icons/Javascript_icon.svg";
+import LinuxIcon from "../assets/icons/Linux_icon.svg";
+import MysqlIcon from "../assets/icons/Mysql_icon.svg";
+import NextJSIcon from "../assets/icons/NextJS_icon.svg";
+import NodeJSIcon from "../assets/icons/NodeJS_icon.svg";
+import PythonIcon from "../assets/icons/Python_icon.svg";
+import ReactIcon from "../assets/icons/React_icon.svg";
+import StrapiIcon from "../assets/icons/Strapi_icon.svg";
+import SupabaseIcon from "../assets/icons/Supabase_icon.svg";
+import TailwindIcon from "../assets/icons/Tailwind_icon.svg";
+import TypescriptIcon from "../assets/icons/Typescript_icon.svg";
 export function fetchArticles() {
   let fetchedArticles = [
     {
+
+      Id:1,
       Title: "Website for Abelian Capital",
       Icons: [
         JavascriptIcon,
@@ -49,11 +75,12 @@ export function fetchArticles() {
       Background: AbelianWebpageBackground,
     },
     {
+      Id:2,
       Title: "Backtesting Dashboard",
       Icons: [JavascriptIcon, ReactIcon],
       Description:
         "A dashboard app with React and Bootstrap that will display price charts and other financial data.The main thing I wanted to achieve with this project was to test different plotting libraries, mainly for displaying price data and to get a grip on data visualization in general.",
-      Url: none,
+      Url: null,
       Article: `In this Blog, I will write about the process of building a dashboard app with React and Bootstrap that will display price charts and other financial data.
       This project was from the beginning meant to be more on the experimental side of things.
       The initial idea behind the Dashboard is to have a central web interface that lets the team monitor the real-time execution of trades on different brokerage platforms and visualize backtesting datasets.
@@ -90,30 +117,42 @@ export function fetchArticles() {
       Background: BacktestingDashboardBackground,
     },
     {
+      Id:3,
       Title: "Kilian Voss Homepage (this page)",
       Icons: [JavascriptIcon, ReactIcon, TailwindIcon],
       Description:
-        "*Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, repellendus cum hic, expedita officiis exercitationem mollitia tenetur quos alias accusantium possimus eius? Vel debitis hic consectetur quod repellat nisi id?",
+        `In this article I'm going to shed light behind the process of me building my own webpage from scratch.
+        The website is meant as a blog for me to publish articles about my projects and showcase my skills to potential employers and clients.`,
       Url: "kilianvoss.dev",
-      Article: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae aperiam unde consequatur earum eligendi error vero deserunt ab pariatur corporis autem, in, sint ex! Vel obcaecati dolor at qui illum?
-      Ex maxime laudantium voluptas beatae dolorum, veniam reprehenderit minus aut quaerat vel exercitationem obcaecati vero? Nihil eos similique, sapiente mollitia id corrupti deleniti ad temporibus rerum quas ipsa odio deserunt.
-      Pariatur, et. Ut, harum ad quas explicabo earum sequi natus facilis minus? Eos eius rerum, iste eaque assumenda neque accusantium. Omnis earum fuga, eos odit excepturi impedit explicabo delectus iure.
-      Cupiditate quos deleniti id minima impedit temporibus, odit quam modi reiciendis eaque, asperiores voluptates eos. Labore quo quidem, quod perferendis repudiandae, nihil earum, harum assumenda alias eos soluta adipisci odit.
-      Doloremque nostrum alias provident debitis, perferendis, sunt aspernatur quas libero quasi deleniti optio harum ex quidem, eum magnam reiciendis quia soluta omnis suscipit officiis delectus repellendus id. Ab, culpa cupiditate!
-      Consectetur repellat molestias quibusdam adipisci aspernatur nisi error facere, iusto laborum tempora similique porro voluptates ullam. Deserunt similique amet culpa fuga voluptatibus laudantium, aperiam odit quasi corrupti officia dolorem provident!
-      Ipsam sed asperiores earum, laboriosam perspiciatis omnis voluptatibus architecto est soluta rem amet. Aliquid quaerat quo enim nesciunt, corrupti id vel? Aliquam impedit, expedita repudiandae explicabo dolor recusandae sit corrupti.
-      Sapiente, voluptate. Recusandae totam impedit sit, aliquam ducimus culpa quas temporibus sequi dicta aspernatur molestias doloribus modi nisi blanditiis minus. Illo architecto dolorum vel excepturi eum animi facilis, explicabo asperiores.
-      Fuga perferendis pariatur deserunt animi dolores minima at eos laudantium voluptates beatae? Praesentium quod maiores deserunt, atque repellendus labore soluta nisi quibusdam doloremque. Assumenda rem cupiditate aliquid fugiat adipisci expedita?`,
+      Article: `
+      Most simple blog and brochure like websites these days are made with nocode editors like squarespace or wix.com, or with pre built component libraries like Bootstrap or Styled components.
+      And even though I could have saved myself a lot of time using one of the options listed above, there are multiple reasons on why i went for the harder route of of writing my own html and custom css (via Tailwind CSS).
+      Starting with the looks, for my own website i wanted it to look a bit less comon to what other blog pages look like, and since most of those prebuilt solutions have a kind of generic look to them, - that is especially true for bootstrap CSS - i had to write my own components to stand out.
+      The other one being is that this project definitely helped me to expand and practice my Tailwind CSS, layouting and to a lesser degree also my React skills.
+      Choosing react for such a small project might seem a little overkill at first, but i chose it anyway since i have more experience in it than writing vanilla HTML/CSS.
+      The structure of the site was decided fairly quickly, a page to introduce myself with a foto, a copy of my CV and a little introduction paragraph, a skills page where all technologies and my experience with them are being shared, and a blog section where detailed articles about my projects (such as this one) can be found.
+      After that the pages needed to be designed, to keep everything in the same minimal look i presented every element on a intermittent second layer gray-transparent background, laying on top of a flashy background gif image, which changes for every page.
+      The fonts were picked from google fonts and all icons from iconfinder.com.
+      For the layout and spacing i have mainly used the flex-box model, the grid model was used for the blog section menu and the expanded article view.
+      Responsiveness was easily achieved by using Tailwinds media query classes in combination with the classic css box model.
+      One of the bigger technical challenge was to render a PDF document (my CV) into the UI and make it Responsive at the same time.
+      In order to achieve the color changing hover effect over the icons in the skills and contact sections, i took two svg images of the same icon, one in black and one colored and placed them over each other at the same spot.
+      By default the black icon is made visible and the colored icon is hidden, vice versa when hovered over.
+      The portfolio section was built in a true react way of doing things, firstly i used the grid system to design a preview card module and an separate module of the expanded Article before linking them both together.
+      Afterwards i built a separate Javascript module that returns all articles in Object form to the main page component, inside the main component the .map functions then creates a article preview card for each returned article.
+      Overall since project was more in the hobby category and was mostly worked on on weekends and days off of work, it took me about a month from start to finish.
+      This article might not be the final one on this topic since there are still things to improve on this website.`,
       Background: KilianWebpageBackground,
     },
     {
+      Id:4,
       Title: "Switchboard Configurator",
       Icons: [JavascriptIcon, ReactIcon, NextJSIcon, SupabaseIcon],
       Description: `The following is a documentation of a react web app that i have recently built for a client.
       The client, a representative of an electrical engineering company asked me to build an online configurator for household switchboards.
       Without getting too much into the nitty gritty of electrical engineering, I will give my best to explain the functionality of the desired application.
       `,
-      Url: none,
+      Url: null,
       Article: `
 
       The tool is targeted towards the customers who can configure custom switchboards, generate technical drawings of each configuration and download them as PDF documents, save the configuration to a backend database, and then convert the configuration into an actual order.
@@ -153,11 +192,12 @@ export function fetchArticles() {
       Background: SwitchboardConfiguratorBackground,
     },
     {
+      Id:5,
       Title: "Stock Price Database",
       Icons: [PythonIcon, MysqlIcon, AWSIcon],
       Description: `In the following, I will describe the process of building a Python script that creates and updates a MySQL database containing historical price data of over 10.000 different stocks.
       `,
-      Url: none,
+      Url: null,
       Article: `
       Objective:
       The Database is being used to feed a machine-learning framework that will model trading strategies and test them on its historical price data. After many iterations, the goal of the machine learning frameworks will be to come up with historically successful trading strategies.
