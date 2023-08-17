@@ -25,7 +25,6 @@ import TypescriptIcon from "../assets/icons/Typescript_icon.svg";
 export function fetchArticles() {
   let fetchedArticles = [
     {
-
       Id:1,
       Title: "Website for Abelian Capital",
       Icons: [
@@ -39,7 +38,8 @@ export function fetchArticles() {
       ],
       Description:
         "In the following blog series, I am going to document the development process of a React WebApp from Start to Finish. It is meant to be a website for a startup that I have been involved in recently.In the following blog series, I am going to document the development process of a React WebApp from Start to Finish. It is meant to be a website for a startup that I have been involved in recently.",
-      Url: "abelian.capital",
+      Github: "https://github.com/kv055/Abelian_Hompage_Frontend",
+        Url: "abelian.capital",
       Article: `Intro:
       The blog will be split into 5 chapters, divided into sections starting with elaborating on which tech stack I have used and why, then outlining the required functionality of the website, the design, and layout, the process of implementing a cms system, building a login section as well as a blog section and then finally documenting the deployment of the frontend and the backend on Amazon AWS.
      I am writing this blog to demonstrate my development practices, my skill level and furthermore to get some feedback on this project. 
@@ -80,7 +80,8 @@ export function fetchArticles() {
       Icons: [JavascriptIcon, ReactIcon],
       Description:
         "A dashboard app with React and Bootstrap that will display price charts and other financial data.The main thing I wanted to achieve with this project was to test different plotting libraries, mainly for displaying price data and to get a grip on data visualization in general.",
-      Url: null,
+      Github: null,
+        Url: "https://abelianterminaldemo.s3.amazonaws.com/index.html",
       Article: `In this Blog, I will write about the process of building a dashboard app with React and Bootstrap that will display price charts and other financial data.
       This project was from the beginning meant to be more on the experimental side of things.
       The initial idea behind the Dashboard is to have a central web interface that lets the team monitor the real-time execution of trades on different brokerage platforms and visualize backtesting datasets.
@@ -123,7 +124,8 @@ export function fetchArticles() {
       Description:
         `In this article I'm going to shed light behind the process of me building my own webpage from scratch.
         The website is meant as a blog for me to publish articles about my projects and showcase my skills to potential employers and clients.`,
-      Url: "kilianvoss.dev",
+      Github: "https://github.com/kv055/Kilian_Voss_Homepage",
+        Url: "kilianvoss.dev",
       Article: `
       Most simple blog and brochure like websites these days are made with nocode editors like squarespace or wix.com, or with pre built component libraries like Bootstrap or Styled components.
       And even though I could have saved myself a lot of time using one of the options listed above, there are multiple reasons on why i went for the harder route of of writing my own html and custom css (via Tailwind CSS).
@@ -152,6 +154,7 @@ export function fetchArticles() {
       The client, a representative of an electrical engineering company asked me to build an online configurator for household switchboards.
       Without getting too much into the nitty gritty of electrical engineering, I will give my best to explain the functionality of the desired application.
       `,
+      Github: null,
       Url: null,
       Article: `
 
@@ -197,6 +200,7 @@ export function fetchArticles() {
       Icons: [PythonIcon, MysqlIcon, AWSIcon],
       Description: `In the following, I will describe the process of building a Python script that creates and updates a MySQL database containing historical price data of over 10.000 different stocks.
       `,
+      Github: null,
       Url: null,
       Article: `
       Objective:

@@ -62,6 +62,7 @@ export default function Portfolio_Page() {
                 Icons={article.Icons}
                 Article={article.Article}
                 Url={article.Url}
+                GitHubUrl={article.Github}
                 Background={article.Background}
                 isExpanded={expandedArticleId === article.Id}
                 onExpand={() => handleExpansion(article.Id)}

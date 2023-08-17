@@ -10,6 +10,7 @@ export default function ArticleCard({
   Icons,
   Article,
   Url,
+  GitHubUrl,
   Background,
 }) {
   return (
@@ -47,7 +48,7 @@ export default function ArticleCard({
           )}
         </div>
 
-        {isExpanded && <ExpandedArticle Article={Article} Url={Url} />}
+        {isExpanded && <ExpandedArticle Article={Article} Url={Url} GitHubUrl={GitHubUrl}/>}
 
         {!isExpanded && (
           <button
