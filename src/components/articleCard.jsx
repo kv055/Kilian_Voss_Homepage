@@ -21,7 +21,7 @@ export default function ArticleCard({
           isExpanded ? "col-span-full order-first" : "col-span-2 lg:col-span-1"
         } bg-slate-300 rounded-xl p-5 mb-5`}
       >
-        <div className="grid grid-cols-2 auto-rows-auto gap-3">
+        <div className="grid grid-cols-2 auto-rows-auto gap-3 ">
           {isExpanded && (
             <button
               className="visible col-span-2 p-2 border-black text-black border-solid border-4 rounded-xl Orbitron"
@@ -31,7 +31,7 @@ export default function ArticleCard({
             </button>
           )}
 
-          <h3 className="Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1">
+          <h3 className={`Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1`}>
             {Title}
           </h3>
 
