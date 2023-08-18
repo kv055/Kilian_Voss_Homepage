@@ -16,8 +16,7 @@ const ExpandedPDF = ({ handleExpand }) => {
     const handleResize = () => {
       if (window.innerWidth < 468) {
         setScale(window.innerWidth / 600);
-      } 
-      else if (window.innerWidth < 768){
+      } else if (window.innerWidth < 768) {
         setScale(window.innerWidth / 700);
       } else {
         setScale(window.innerWidth / 900);
@@ -36,14 +35,13 @@ const ExpandedPDF = ({ handleExpand }) => {
     <div className={`flex flex-col xl:flex-col justify-evenly items-center`}>
       <div className="flex flex-col">
         <div className="grid grid-cols-2 m-5">
-          <button
+          <a
             className="p-2 border-solid border-black border-2 rounded-xl"
             href={CV}
             download
-            onClick={handleExpand}
           >
             Download
-          </button>
+          </a>
           <button
             className="p-2 bg-red-500 text-white rounded-xl "
             onClick={handleExpand}

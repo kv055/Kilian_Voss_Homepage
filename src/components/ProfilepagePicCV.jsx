@@ -44,7 +44,7 @@ const PicCV = () => {
 
   return (
     <>
-      {isExpanded ? (
+      {!isExpanded ? (
         <div
           className={`flex flex-col ${
             isExpanded ? "xl:flex-col" : "xl:flex-row"
