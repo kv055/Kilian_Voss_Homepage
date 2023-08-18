@@ -14,7 +14,14 @@ const ExpandedPDF = ({ handleExpand }) => {
   useEffect(() => {
     // Update the scale whenever the window size changes
     const handleResize = () => {
-      setScale(window.innerWidth / 1000);
+      if (window.innerWidth < 468) {
+        setScale(window.innerWidth / 600);
+      } 
+      else if (window.innerWidth < 768){
+        setScale(window.innerWidth / 700);
+      } else {
+        setScale(window.innerWidth / 900);
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -79,4 +86,3 @@ const ExpandedPDF = ({ handleExpand }) => {
 };
 
 export default ExpandedPDF;
-
