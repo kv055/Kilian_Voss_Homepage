@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import DownloadIcon from "../assets/icons/Download_icon.svg";
 import PreviewIcon from "../assets/icons/Preview_icon.svg";
@@ -18,11 +18,37 @@ const PicCV = () => {
   const handleExpand = () => {
     setIsExpanded(!isExpanded);
   };
+  const [scale, setScale] = useState(0.5);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (isExpanded) {
+        setScale(window.innerWidth / 1000); // Adjust the divisor as per your needs
+      } else {
+        if (window.innerWidth < 640) { // Tailwind's sm
+          setScale(0.4);
+        } else if (window.innerWidth < 768) { // Tailwind's md
+          setScale(0.5);
+        } else if (window.innerWidth < 1024) { // Tailwind's lg
+          setScale(0.6);
+        } else { // Tailwind's xl
+          setScale(0.7);
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call the function initially to set the scale based on the initial viewport size
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isExpanded]);
 
   return (
-    <div className={`flex flex-col ${
-      isExpanded ? "xl:flex-col" : "xl:flex-row"
-    } justify-evenly items-center`}>
+    <div
+      className={`flex flex-col ${
+        isExpanded ? "xl:flex-col" : "xl:flex-row"
+      } justify-evenly items-center`}
+      >
       <img className="w-1/3 h-1/3 rounded-xl" src={ProfilePicture} alt="" />
       <div className="flex flex-col">
         {isExpanded ? (
@@ -55,19 +81,19 @@ const PicCV = () => {
         )}
 
         <div
-          className={`flex flex-col md:flex-row cursor-pointer group ${
+          className={`flex flex-col lg:flex-row cursor-pointer group ${
             isExpanded ? " h-full w-full flex-col md:flex-col" : ""
           }`}
         >
           <Document file={CV} className="">
             <Page
               pageNumber={pageNumber}
-              scale={isExpanded ? 1.3 : 0.5}
+              scale={scale}
               onClick={handleExpand}
             />
           </Document>
           {!isExpanded ? (
-            <div className="flex flex-row md:flex-col justify-evenly">
+            <div className="flex flex-row lg:flex-col justify-evenly">
               <img
                 src={PreviewIcon}
                 className="w-20 h-20 mx-5"
