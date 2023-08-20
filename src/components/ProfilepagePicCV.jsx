@@ -48,14 +48,14 @@ const PicCV = () => {
         <div
           className={`flex flex-col ${
             isExpanded ? "xl:flex-col" : "xl:flex-row"
-          } justify-evenly items-center`}
+          } justify-evenly items-center relative`}
         >
           <img className="w-1/3 h-1/3 rounded-xl" src={ProfilePicture} alt="" />
           <div className="flex flex-col">
             <h3 className="Orbitron p-5 tracking-widest">CV:</h3>
             <div
-              className={`flex flex-col lg:flex-row cursor-pointer group ${
-                isExpanded ? " h-full w-full flex-col md:flex-col" : ""
+              className={`relative cursor-pointer group ${
+                isExpanded ? "h-full w-full flex-col md:flex-col" : ""
               }`}
             >
               <Document file={CV} className="">
@@ -65,21 +65,39 @@ const PicCV = () => {
                   onClick={handleExpand}
                 />
               </Document>
-              <div className="flex flex-row lg:flex-col justify-evenly">
-                <img
-                  src={PreviewIcon}
-                  className="w-20 h-20 mx-5"
-                  onClick={handleExpand}
-                ></img>
-                <a href={CV} download>
+              {window.innerWidth > 1024 ? (
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
                   <img
-                    src={DownloadIcon}
+                    src={PreviewIcon}
+                    className="w-20 h-20"
+                    onClick={handleExpand}
+                    alt="Preview"
+                  />
+                  <a href={CV} download>
+                    <img
+                      src={DownloadIcon}
+                      className="w-20 h-20"
+                      alt="Download"
+                    />
+                  </a>
+                </div>
+              ) : (
+                <div className="flex flex-row lg:flex-col justify-evenly">
+                  <img
+                    src={PreviewIcon}
                     className="w-20 h-20 mx-5"
-                    href={CV}
-                    download
+                    onClick={handleExpand}
                   ></img>
-                </a>
-              </div>
+                  <a href={CV} download>
+                    <img
+                      src={DownloadIcon}
+                      className="w-20 h-20 mx-5"
+                      href={CV}
+                      download
+                    ></img>
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
