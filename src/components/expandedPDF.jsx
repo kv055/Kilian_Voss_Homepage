@@ -34,16 +34,16 @@ const ExpandedPDF = ({ handleExpand }) => {
   return (
     <div className={`flex flex-col xl:flex-col justify-evenly items-center`}>
       <div className="flex flex-col">
-        <div className="grid grid-cols-2 m-5">
+        <div className="grid grid-cols-2 m-5 gap-2">
           <a
-            className="p-2 border-solid border-black border-2 rounded-xl"
+            className="p-2 border-solid border-black border-2 rounded-xl mx-3"
             href={CV}
             download
           >
             Download
           </a>
           <button
-            className="p-2 bg-red-500 text-white rounded-xl "
+            className="p-2 bg-red-500 text-white rounded-xl mx-3"
             onClick={handleExpand}
           >
             Close

@@ -16,7 +16,6 @@ export default function ArticleCard({
   return (
     <>
       <div
-        
         className={`group relative ${
           isExpanded ? "col-span-full order-first" : "col-span-2 lg:col-span-1"
         } bg-slate-300 rounded-xl p-5 mb-5`}
@@ -31,7 +30,9 @@ export default function ArticleCard({
             </button>
           )}
 
-          <h3 className={`Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1`}>
+          <h3
+            className={`Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1`}
+          >
             {Title}
           </h3>
 
@@ -48,11 +49,13 @@ export default function ArticleCard({
           )}
         </div>
 
-        {isExpanded && <ExpandedArticle Article={Article} Url={Url} GitHubUrl={GitHubUrl}/>}
+        {isExpanded && (
+          <ExpandedArticle Article={Article} Url={Url} GitHubUrl={GitHubUrl} />
+        )}
 
         {!isExpanded && (
           <button
-            className="visible absolute p-2 bg-blue-500 text-white top-1/2 left-1/2 rounded-xl Orbitron transform -translate-x-1/2 -translate-y-1/2 flex space-x-4 transition-opacity opacity-0 group-hover:opacity-100"
+            className="p-2 bg-blue-500 text-white absolute top-1/2 left-1/2 rounded-xl Orbitron transform -translate-x-1/2 -translate-y-1/2 flex space-x-4 transition-opacity opacity-0 group-hover:opacity-100"
             onClick={onExpand}
           >
             Expand
