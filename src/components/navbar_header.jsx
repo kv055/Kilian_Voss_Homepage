@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export default function Header({ PageName }) {
   return (
     <>
-      <div className="flex flex-row p-2 text-center justify-around">
-        <Link to="/" className="text-6xl">
+      <div className="flex flex-row text-center justify-around items-end mb-5">
+        <Link to="/" className="text-7xl pb-3">
           &#8592;
         </Link>
         <div className="flex flex-col">

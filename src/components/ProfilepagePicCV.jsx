@@ -48,9 +48,9 @@ const PicCV = () => {
         <div
           className={`flex flex-col ${
             isExpanded ? "xl:flex-col" : "xl:flex-row"
-          } justify-evenly items-center relative`}
+          } justify-evenly items-center relative xl:items-end`}
         >
-          <img className="w-1/3 h-1/3 rounded-xl" src={ProfilePicture} alt="" />
+          <img className="xs:w-1/2 md:w-2/5 xs:h-1/2 md:h-2/5 p-5 sm:p-1 rounded-xl" src={ProfilePicture} alt="" />
           <div className="flex flex-col">
             <h3 className="Orbitron p-5 tracking-widest">CV:</h3>
             <div
