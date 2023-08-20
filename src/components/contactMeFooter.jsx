@@ -10,7 +10,7 @@ import UpworkColor from "../assets/icons/Upwork_icon_color.svg";
 
 const ContactMe = () => {
   return (
-    <div className='my-8'>
+    <div className='my-8 pb-20'>
       <h3 className='Orbitron p-3 tracking-widest'>Contact me:</h3>
       <ul className="flex flex-row gap-10 justify-center">
         <li>
