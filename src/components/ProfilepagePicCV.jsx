@@ -3,8 +3,8 @@ import { Document, Page, pdfjs } from "react-pdf";
 import EpandedPDF from "../components/expandedPDF";
 import DownloadIcon from "../assets/icons/Download_icon.svg";
 import PreviewIcon from "../assets/icons/Preview_icon.svg";
-// import CV from "../assets/CV23.pdf";
-import CV from "../assets/KV_CV23.pdf";
+import CV from "../assets/CV23.pdf";
+// import CV from "../assets/KV_CV23.pdf";
 
 import ProfilePicture from "../assets/Kilian.jpg";
 

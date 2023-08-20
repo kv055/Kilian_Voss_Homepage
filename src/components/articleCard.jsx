@@ -23,7 +23,7 @@ export default function ArticleCard({
         <div className="grid grid-cols-2 auto-rows-auto gap-3 ">
           {isExpanded && (
             <button
-              className="visible col-span-2 p-2 border-black text-black border-solid border-4 rounded-xl Orbitron"
+              className="visible col-span-2 p-1 mx-10 border-black text-black border-solid border-2 rounded-xl Orbitron"
               onClick={onExpand}
             >
               Close

@@ -23,19 +23,22 @@ export default function Profile_Page() {
           <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
           <div className="md:m-5 bg-slate-300 rounded-xl justify-center">
             <p className="row-span-1 col-span-2 p-5 leading-9 tracking-wide text-lg text-left Outfit">
-              My name is Kilian Voss, I am a 26 year old completely self taught
-              full stack developer with 3+ years of experience working mostly
-              remotely and self employed for independent clients, as well as in
-              the corporate world. I have delivered an extensive list of
-              projects to clients and by doing so mainly become proficient in
-              Javascript and Python including various associated Libraries,
-              Frameworks such as React, NextJS and Flask to name a few. In
-              addition to the technical side I have a passion for creative UI
-              implementations and design experience working with software such
-              as Figma as well as the Adobe suite. Currently based in Melbourne,
-              Victoria I am looking for short term contract work as well as part
-              time employment in roles preferably associated with the
-              technologies listed above.
+              My name is Kilian Voss, I am a 26 year old full stack developer
+              with 3+ years of professional experience. Most Proficient in
+              ReactJS and Python, more detailed list of skills updated regularly
+              @/Skills. Mostly remotely employed and self employed for
+              independent clients, as well as in the corporate world. I have
+              delivered an extensive list of projects to clients, and by doing
+              so mainly become proficient in Javascript and Python including
+              various associated Libraries, Frameworks such as React, NextJS and
+              Flask to name a few. A more detailed list of selected projects
+              should give a comprehensive view of my current skill level
+              @/Portfolio. In addition to the technical side I have a passion
+              for creative UI implementations and design experience working with
+              software such as Figma as well as the Adobe suite. Currently based
+              in Melbourne, Victoria I am looking for short term contract work
+              as well as part time employment in roles preferably associated
+              with the technologies listed above.
             </p>
           </div>
           <ContactMe />
