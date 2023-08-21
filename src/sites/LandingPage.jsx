@@ -28,7 +28,7 @@ const Landing_Page = () => {
               <Link to="/Profile">
                 <button
                   type="button"
-                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Profile
                 </button>
@@ -36,7 +36,7 @@ const Landing_Page = () => {
               <Link to="/Skills">
                 <button
                   type="button"
-                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Skills
                 </button>
@@ -44,7 +44,7 @@ const Landing_Page = () => {
               <Link to="/Portfolio">
                 <button
                   type="button"
-                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Portfolio
                 </button>
