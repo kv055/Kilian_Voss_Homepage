@@ -27,7 +27,7 @@ export default function ExpandedArticle({ Url, GitHubUrl, Article }) {
         <h4 className="m-5 Orbitron text-lg tracking-wide font-bold col-span-2">
           The Process:
         </h4>
-        <p className="pt-5 leading-7 md:leading-9 tracking-wide text-lg text-left Outfit col-span-2">
+        <p className="col-span-2 py-5  px-6 xl:px-28 leading-5 lg:leading-9 tracking-wide text-sm lg:text-lg text-left Outfit">
           {Article}
         </p>
       </div>

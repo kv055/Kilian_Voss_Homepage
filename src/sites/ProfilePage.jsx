@@ -22,7 +22,7 @@ export default function Profile_Page() {
           {/* Layer 3: */}
           <h3 className="Orbitron p-5 tracking-widest">Introduction</h3>
           <div className="md:m-5 bg-slate-300 rounded-xl justify-center">
-            <p className="row-span-1 col-span-2 p-5 leading-9 tracking-wide text-lg text-left Outfit">
+            <p className="row-span-1 col-span-2 py-5  px-6 xl:px-28 leading-5 lg:leading-9 tracking-wide text-sm lg:text-lg text-left Outfit">
               My name is Kilian Voss, I am a 26 year old full stack developer
               with 3+ years of professional experience. Most Proficient in
               ReactJS and Python, more detailed list of skills updated regularly
