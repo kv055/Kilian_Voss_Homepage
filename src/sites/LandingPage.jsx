@@ -24,11 +24,11 @@ const Landing_Page = () => {
             <h4 className=" tracking-widest text-black text-md xl:text-2xl Orbitron px-5">
               Full stack development
             </h4>
-            <div className="flex xl:flex-row flex-col justify-evenly">
+            <div className="grid xl:grid-flow-col grid-flow-row gap-5 m-5">
               <Link to="/Profile">
                 <button
                   type="button"
-                  className="m-3 lg:m-6 p-5 lg:p-10 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Profile
                 </button>
@@ -36,7 +36,7 @@ const Landing_Page = () => {
               <Link to="/Skills">
                 <button
                   type="button"
-                  className="m-3 lg:m-6 p-5 lg:p-10 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-blue-500 to-violet-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Skills
                 </button>
@@ -44,7 +44,7 @@ const Landing_Page = () => {
               <Link to="/Portfolio">
                 <button
                   type="button"
-                  className="m-3 lg:m-6 p-5 lg:p-10 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500"
+                  className="mx-5 rounded-xl Orbitron text-sm lg:text-lg hover:text-2xl hover:p-8 hover:px-5 hover:underline font-bold tracking-widest bg-gradient-to-r from-violet-500 to-red-500 hover:from-pink-500 hover:to-yellow-500 xl:w-48 xl:h-20 w-32 h-12"
                 >
                   Portfolio
                 </button>
