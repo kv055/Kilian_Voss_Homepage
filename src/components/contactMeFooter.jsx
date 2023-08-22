@@ -31,7 +31,7 @@ const ContactMe = () => {
             </div>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.upwork.com/freelancers/~019b30151dda4784ed" className="group">
             <p>Upwork</p>
             <div className="relative">
@@ -39,7 +39,7 @@ const ContactMe = () => {
               <img src={UpworkColor} alt="Upwork Color" className="w-16 h-16 hidden group-hover:block" />
             </div>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="mailto:kilian96@live.de" className="group">
             <p>Email</p>
