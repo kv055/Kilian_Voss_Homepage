@@ -5,32 +5,10 @@ import { fetchArticles } from "../api/fetchArticles";
 import Header from "../components/navbar_header";
 import ArticleCard from "../components/articleCard";
 // import ContactMe from "../components/contactMeFooter";
-import AbelianWebpageBackground from "../assets/portfolio/Abelian_webpage_background.png";
-import BacktestingDashboardBackground from "../assets/portfolio/Backtesting_dashboard_background.png";
-import KilianWebpageBackground from "../assets/portfolio/Kilian_webpage_background.png";
-import SwitchboardConfiguratorBackground from "../assets/portfolio/Curntly_configurator_background.png";
-import StockpriceDatabaseBackground from "../assets/portfolio/Stockprice_database_background.png";
-import AWSIcon from "../assets/icons/AWS_icon.svg";
-import AWSS3Icon from "../assets/icons/AWS_S3_icon.svg";
-import CSSIcon from "../assets/icons/CSS_icon.svg";
-import DockerIcon from "../assets/icons/Docker_icon.svg";
-import FlaskIcon from "../assets/icons/Flask_icon.svg";
-import GitIcon from "../assets/icons/Git_icon.svg";
-import GithubIcon from "../assets/icons/Github_icon.svg";
-import HtmlIcon from "../assets/icons/Html_icon.svg";
-import JavascriptIcon from "../assets/icons/Javascript_icon.svg";
-import LinuxIcon from "../assets/icons/Linux_icon.svg";
-import MysqlIcon from "../assets/icons/Mysql_icon.svg";
-import NextJSIcon from "../assets/icons/NextJS_icon.svg";
-import NodeJSIcon from "../assets/icons/NodeJS_icon.svg";
-import PythonIcon from "../assets/icons/Python_icon.svg";
-import ReactIcon from "../assets/icons/React_icon.svg";
-import StrapiIcon from "../assets/icons/Strapi_icon.svg";
-import SupabaseIcon from "../assets/icons/Supabase_icon.svg";
-import TailwindIcon from "../assets/icons/Tailwind_icon.svg";
-import TypescriptIcon from "../assets/icons/Typescript_icon.svg";
+
 export default function Portfolio_Page() {
   const allArticles = fetchArticles();
+  console.log(allArticles);
   const [expandedArticleId, setExpandedArticleId] = useState(null);
 
   const handleExpansion = (id) => {
@@ -55,17 +33,17 @@ export default function Portfolio_Page() {
             {/* Layer 4: Each Project */}
             {allArticles.map((article) => (
               <ArticleCard
-                key={article.Id}
-                Id={article.Id}
+                key={article.id}
+                Id={article.id}
                 Title={article.Title}
                 Description={article.Description}
                 Icons={article.Icons}
                 Article={article.Article}
-                Url={article.Url}
-                GitHubUrl={article.Github}
-                Background={article.Background}
-                isExpanded={expandedArticleId === article.Id}
-                onExpand={() => handleExpansion(article.Id)}
+                Url={article.DeployedURL}
+                GitHubUrl={article.GithubURL}
+                Background={article.ArticleBackground}
+                isExpanded={expandedArticleId === article.id}
+                onExpand={() => handleExpansion(article.id)}
               />
             ))}
           </div>

@@ -29,20 +29,30 @@ export default function ArticleCard({
               Close
             </button>
           )}
-
+          {/* 
           <h3
             className={`Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-1`}
           >
             {Title}
-          </h3>
+          </h3> */}
 
-          <div className="grid grid-flow-col col-span-2 md:col-span-1">
+          <h3
+            className={`Orbitron font-bold text-lg tracking-widest col-span-2 md:col-span-2`}
+          >
+            {Title}
+          </h3>
+          {/* <div className="grid grid-flow-col col-span-2 md:col-span-1">
             {Icons.map((item, index) => (
               <img key={index} src={item} className=" w-8 h-8 mx-3" />
             ))}
-          </div>
+          </div> */}
 
-          {!isExpanded && <img src={Background} className="col-span-2"></img>}
+          {!isExpanded && (
+            <img
+              src={`https://container-service-420.g0bs5jf3dhe1s.us-east-1.cs.amazonlightsail.com${Background.data.attributes.url}`}
+              className="col-span-2"
+            ></img>
+          )}
 
           {!isExpanded && (
             <p className="visible text-sm col-span-2">{Description}</p>
